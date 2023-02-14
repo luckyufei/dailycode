@@ -1,9 +1,63 @@
 {
+  "name": "logseqnotes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "pm2.config.js",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage",
+    "autocommit": "tsx src/tools/git/index.ts --flag=2",
+    "note": "tsx src/tools/index.ts --stage=note",
+    "pm2": "pm2 start pm2.config.cjs",
+    "vitepress:dev": "vitepress dev .",
+    "vitepress:build": "vitepress build pages",
+    "vitepress:preview": "vitepress preview pages",
     "dev": "docsify serve --open",
     "convert": "docsify-pdf-converter"
   },
+  "author": "allanyu",
+  "type": "module",
+  "module": "ESNEXT",
+  "license": "MIT",
+  "engines": {
+    "node": ">10.0.0"
+  },
+  "devDependencies": {
+    "@types/marked": "^4.0.7",
+    "@types/node": "^16.x",
+    "@types/prettier": "^2.7.0",
+    "@types/pretty-ms": "^5.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "@typescript-eslint/parser": "^5.30.6",
+    "@vitest/coverage-istanbul": "^0.28.4",
+    "abstract-logging": "^2.0.1",
+    "docsify-cli": "^4.4.4",
+    "eslint": "^8.20.0",
+    "eslint-define-config": "^1.5.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "js-base64": "^3.7.2",
+    "marked": "^4.1.0",
+    "open-props": "^1.5.3",
+    "pino": "^8.5.0",
+    "pino-pretty": "^9.1.0",
+    "pnpm": "^7.11.0",
+    "prettier": "2.7.1",
+    "pretty-ms": "^8.0.0",
+    "tinypng": "^1.0.0",
+    "tsx": "^3.8.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.2.5",
+    "vitest": "^0.28.5",
+    "zx": "^7.0.7"
+  },
+  "packageManager": "pnpm@7.11.0",
   "dependencies": {
-    "docsify-cli": "^4.4.4"
+    "@vitest/coverage-c8": "^0.28.5",
+    "entities": "^4.4.0",
+    "vitepress": "1.0.0-alpha.33",
+    "vue": "^3.2.45"
   }
 }
