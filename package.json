@@ -33,7 +33,7 @@
     "@vitest/coverage-istanbul": "^0.28.4",
     "abstract-logging": "^2.0.1",
     "docsify-cli": "^4.4.4",
-    "eslint": "^8.20.0",
+    "eslint": "8.23.0",
     "eslint-define-config": "^1.5.1",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-node": "^11.1.0",

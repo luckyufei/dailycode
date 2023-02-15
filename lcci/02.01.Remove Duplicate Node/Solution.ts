@@ -10,7 +10,7 @@
  * }
  */
 
-function removeDuplicateNodes(head: ListNode | null): ListNode | null {
+export function removeDuplicateNodes(head: ListNode | null): ListNode | null {
     if (head == null) {
         return head;
     }

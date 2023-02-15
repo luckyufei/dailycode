@@ -10,7 +10,9 @@
  * }
  */
 
-function addTwoNumbers(
+import { ListNode } from '../../__ds__/ListNode';
+
+export function addTwoNumbers(
     l1: ListNode | null,
     l2: ListNode | null,
 ): ListNode | null {
