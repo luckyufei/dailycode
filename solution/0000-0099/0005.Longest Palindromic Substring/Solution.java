@@ -3,6 +3,7 @@ class Solution {
         int n = s.length();
         boolean[][] dp = new boolean[n][n];
         int mx = 1, start = 0;
+        // [1, 2, 3] 图像感
         for (int j = 0; j < n; ++j) {
             for (int i = 0; i <= j; ++i) {
                 if (j - i < 2) {

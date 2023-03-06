@@ -3,7 +3,7 @@
  * @param {number[]} nums2
  * @return {number}  012345
  */
-var findMedianSortedArrays = function (nums1, nums2) {
+export const findMedianSortedArrays = function (nums1, nums2) {
     if (nums1.length == 0 || nums2.length == 0) {
         if ((nums1.length + nums2.length) % 2 == 1) {
             const index = parseInt((nums1.length + nums2.length) / 2);
@@ -22,7 +22,7 @@ var findMedianSortedArrays = function (nums1, nums2) {
         N = nums2.length;
     let min = 0,
         max = M,
-        half = parseInt((M + N + 1) / 2); // 连个数组合并的中间值
+        half = parseInt((M + N + 1) / 2); // 两个数组合并的中间值
     while (min <= max) {
         let i = parseInt((min + max) / 2); // nums1 的索引值
         let j = half - i; // num2 的索引值
@@ -61,10 +61,6 @@ function swap(a, b) {
     a = b;
     b = tmp;
 }
-
-const nums1 = [4, 5];
-const nums2 = [1, 2, 3];
-findMedianSortedArrays(nums1, nums2);
 
 /**
  * 实现思路

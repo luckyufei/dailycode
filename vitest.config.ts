@@ -4,6 +4,7 @@ export default defineConfig({
   test: {
     exclude: ['**/node_modules/**', '**/dist/**', './playground/**/*.*', './playground-temp/**/*.*'],
     include: ['**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
+    watch: false,
     testTimeout: 20000,
     coverage: {
       all: true,
